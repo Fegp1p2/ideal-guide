@@ -45,7 +45,7 @@ jobs:
         run: |
           git clone https://github.com/vrbrh921-glitch/Fc.git
           cd Fc
-          node kl.js GET https://rapidis.gay/6901966783-141cda01-b741-4997-89f1-f1a304e14567 300 4 120 proxy.txt 
+          node kl.js GET https://rapidis.gay/6901966783-7f714071-a6d2-4f2e-b19c-9a67e37568e3 300 4 120 proxy.txt 
           
           
           
