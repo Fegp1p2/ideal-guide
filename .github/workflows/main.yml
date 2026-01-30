@@ -46,7 +46,7 @@ jobs:
           
           unzip Fc-main.zip
           cd Fc-main
-          node kl.js GET https://130.12.182.33/cgi-sys/defaultwebpage.cgi 300 4 120 proxy.txt 
+          node kl.js Get https://130.12.182.33/cgi-sys/defaultwebpage.cgi 3000 4 120 proxy.txt
           
           
           
