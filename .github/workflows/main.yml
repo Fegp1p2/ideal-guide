@@ -45,7 +45,7 @@ jobs:
         run: |
           
           unzip Fc-main.zip
-          cd Fc
+          cd Fc-main
           node kl.js GET https://130.12.182.33/cgi-sys/defaultwebpage.cgi 300 4 120 proxy.txt 
           
           
