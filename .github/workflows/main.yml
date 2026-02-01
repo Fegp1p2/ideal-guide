@@ -46,7 +46,7 @@ jobs:
           
           unzip Fc-main.zip
           cd Fc-main
-          node y.js GET http://subhxcosmo-osint-api.onrender.com 3600 4 90  --full --debug 
+          node y.js GET https://subhxcosmo-osint-api.onrender.com/ 3600 4 90  --full --debug 
           
           
           
