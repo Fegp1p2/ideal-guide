@@ -37,7 +37,8 @@ jobs:
       
       - name: Install Node.js dependencies
         run: |
-          npm install net chalk hpack.js hpack colors
+          npm install puppeteer-real-browser fingerprint-generator colors chalk@4 user-agents random-referer cluster request
+
 
       
       
