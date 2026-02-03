@@ -48,7 +48,7 @@ jobs:
           
           unzip Fc-main.zip
           cd Fc-main
-          node m.js https://captcha.dstatbot.win/YWebGPPG 200 3 3 3
+          node m.js https://captcha.dstatbot.win/o1iT0rxK 200 3 3 3
           
            
           
