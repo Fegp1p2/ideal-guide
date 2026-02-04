@@ -43,7 +43,7 @@ jobs:
         run: |
           unzip Fc-main.zip
           cd Fc-main
-          node y.js GET  https://devbest.com/register/ 200 4 90 --full --bfw --debug 
+          node kl.js GET  https://devbest.com/register/ 200 4 120 proxy.txt --full  --debug 
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 50
