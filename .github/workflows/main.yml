@@ -35,13 +35,14 @@ jobs:
       
       
       - name: Install Node.js dependencies
-        run: npm install puppeteer puppeteer-real-browser fingerprint-generator axios chalk@4 colors request user-agents random-referer
+        run: npm install puppeteer puppeteer-real-browser fingerprint-generator axios chalk@4 colors request user-agents random-referer hpack
             
       
       
       - name: Run HTTP/3 load tester (if Python script exists)
         run: |
           unzip Fc-main.zip
+          cd Fc-main
           node y.js GET  https://devbest.com/register/ 200 4 90 --full --bfw --debug 
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
