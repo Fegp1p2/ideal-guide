@@ -43,7 +43,7 @@ jobs:
           unzip Fc-main.zip
           cd Fc-main
           
-          node y.js GET https://datacount.space/d6369e57-5c4b-4639-83ab-1dfc4c64af56 300 --bfw --debug 
+          node y.js GET https://thecountbot.lol/6901966783-bb7520f9-f455-49cc-b1d1-2e14c7c98f80 300 4 90 --bfw --debug 
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
