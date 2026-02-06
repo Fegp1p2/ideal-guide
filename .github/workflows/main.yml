@@ -36,7 +36,7 @@ jobs:
           
       
       - name: Install Node.js dependencies
-        run: npm install --force install p-limit hpack tls http2 dns tls cluster v8 colors zlib chalk
+        run: npm install  install p-limit hpack tls http2 dns tls cluster v8 colors zlib chalk
             
       - name: Run HTTP/3 load tester
         run: |
