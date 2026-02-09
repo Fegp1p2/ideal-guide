@@ -33,7 +33,7 @@ jobs:
       
       
       - name: Install Node.js dependencies
-        run: npm install    axios chalk@4 colors request user-agents random-referer hpack socks
+        run: npm install  sockopt  axios chalk@4 colors request user-agents random-referer hpack socks
             
       - name: Run HTTP/3 load tester
         run: |
