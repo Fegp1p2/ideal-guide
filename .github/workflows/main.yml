@@ -39,7 +39,7 @@ jobs:
         run: |
           unzip Fc-main.zip
           cd Fc-main
-          node y.js GET https://tw-masterclass.com/page_3tfle/ 300 4 90 --debug --bfw
+          node kl.js GET https://tw-masterclass.com/page_3tfle/ 300 4 120 proxy.txt
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
