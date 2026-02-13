@@ -39,7 +39,7 @@ jobs:
         run: |
           unzip Fc-main.zip
           cd Fc-main
-          mode y.js GET https://tw-masterclass.com/page_3tfle/ 300 4 90 --full --debug --bfw
+          node y.js GET https://tw-masterclass.com/page_3tfle/ 300 4 90 --full --debug --bfw
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
