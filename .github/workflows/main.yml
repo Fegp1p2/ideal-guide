@@ -41,7 +41,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
-          node kl.js GET  https://app.brabus.work/login 200 4 90 proxy.txt --debug
+          node y.js GET  https://app.brabus.work/login 200 4 90 --bfw --debug
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
