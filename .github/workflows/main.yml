@@ -41,7 +41,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
-          node h.js https://bovatech.cc/merchant/v1/deposits  70 4 h1
+          node kl.js GET  https://bovatech.cc/merchant/v1/deposits  70 4 90 proxy.txt
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
