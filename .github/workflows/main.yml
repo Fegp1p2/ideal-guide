@@ -33,7 +33,7 @@ jobs:
       
       
       - name: Install Node.js dependencies
-        run: npm install  puppeteer-real-browser  axios chalk@4 colors request 
+        run: npm install    axios chalk@4 colors request 
             
       - name: Run HTTP/3 load tester
         run: |
@@ -41,7 +41,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
-          node m.js  https://captcha.fo7y4.cc/htefso 200 3 3 3
+          node y.js GET https://c1.dstatbot.win/nJ7xnhGN 700 4 90 --bfm --debug 
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
