@@ -1,0 +1,3 @@
+px870303.pointtoserver.com:10780:purevpn0s14009653:yLMFg4SL52Uua7
+px400501.pointtoserver.com:10780:purevpn0s14009653:yLMFg4SL52Uua7
+px121001.pointtoserver.com:10780:purevpn0s14009653:yLMFg4SL52Uua7
