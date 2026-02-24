@@ -41,7 +41,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main
           cd Fc-main
-          node y.js GET https://www.vape.gg/register 200 4 90 --bfw --debug --full
+          node y.js GET https://www.vape.gg/register 200 4 90 --bfm --debug
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
