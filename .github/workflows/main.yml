@@ -41,7 +41,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main
           cd Fc-main
-          node y.js GET  https://git.dotbypasser.net/DotBypasser/DotBypasser#dot-bypasser  200 4 90  --full --debug --bfm
+          node kl.js GET  https://rork.com/max  200 4 90  proxy.txt --full --debug 
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
