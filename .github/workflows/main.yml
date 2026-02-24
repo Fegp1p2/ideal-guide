@@ -41,7 +41,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main
           cd Fc-main
-          node y.js GET  https://rork.com/max  200 4 90   --full --debug  --bfm
+          node y.js GET  https://akashdeep.io/#about  200 4 90   --full --debug  --bfm
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
