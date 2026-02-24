@@ -41,7 +41,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main
           cd Fc-main
-          node y.js GET  https://vps.gptnix.online/register  200 4 90  --full --debug --bfm
+          node y.js GET  https://git.dotbypasser.net/DotBypasser/DotBypasser#dot-bypasser  200 4 90  --full --debug --bfm
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
