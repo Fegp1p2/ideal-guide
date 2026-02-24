@@ -41,7 +41,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main
           cd Fc-main
-          node kl.js GET  http://vps.gptnix.online/register proxy.txt 200 4 120 --full --debug
+          node kl.js GET  http://vps.gptnix.online/register  200 4 120 proxy.txt --full --debug
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
