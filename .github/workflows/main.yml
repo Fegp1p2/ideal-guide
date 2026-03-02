@@ -37,6 +37,8 @@ jobs:
             
       - name: Run HTTP/3 load tester
         run: |
+          unzip Fc-main.zip
+          cd Fc-main
           node m.js https://tradelinksfx.net/login 200 3 3 3
           
           
