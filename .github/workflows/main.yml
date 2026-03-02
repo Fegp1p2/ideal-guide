@@ -39,7 +39,7 @@ jobs:
         run: |
           unzip Fc-main.zip
           cd Fc-main
-          node kl.js GET https://tempesta-tech.com/tempesta-fw/ proxy.txt 200 4 90 --full --debug         
+          node kl.js GET https://tempesta-tech.com/tempesta-fw/  200 4 120 proxy.txt --full --debug         
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
