@@ -33,14 +33,13 @@ jobs:
       
       
       - name: Install Node.js dependencies
-        run: npm install   socks axios chalk@4 colors request  hpack  https commander colors puppeteer-real-browser
+        run: npm install   socks axios chalk@4 colors request  hpack  https commander colors 
             
       - name: Run HTTP/3 load tester
         run: |
           unzip Fc-main.zip
           cd Fc-main
-          node y.js GET https://tempesta-tech.com/tempesta-fw/ 200 4 90 -full --bfm 
-          
+          node kl.js GET https://tempesta-tech.com/tempesta-fw/ proxy.txt 200 4 90 --full --debug         
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
