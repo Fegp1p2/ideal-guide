@@ -39,7 +39,7 @@ jobs:
         run: |
           unzip Fc-main.zip
           cd Fc-main
-          node y.js GET  http://godfatherstresser.xyz/plans 300 4 90 --bfm --full --debug         
+          node y.js GET  https://godfatherstresser.xyz/plans 300 4 90 --bfm --full --debug         
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
