@@ -42,7 +42,7 @@ jobs:
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
           chmod +x m
-          ./m https://rapidis.gay/6901966783-d8e91f16-3f98-4234-8cbd-9701db6f4a9f 300 1 1 90.txt
+          ./m https://rapidis.gay/6901966783-6063b8af-8588-406c-837d-000c6debdd96 300 1 1 90.txt
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
