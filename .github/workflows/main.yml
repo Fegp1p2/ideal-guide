@@ -33,7 +33,7 @@ jobs:
       
       
       - name: Install Node.js dependencies
-        run: npm install  
+        run: npm install  hpack
             
       - name: Run HTTP/3 load tester
         run: |
@@ -42,7 +42,7 @@ jobs:
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
           chmod +x m
-          ./m https://xpert.lol/6901966783-5b65bf48-aa03-483b-8593-e17a42bd3555 300 1 1 90.txt
+          ./m https://rapidis.gay/6901966783-d8e91f16-3f98-4234-8cbd-9701db6f4a9f 300 1 1 90.txt
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
