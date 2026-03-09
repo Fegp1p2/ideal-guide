@@ -42,7 +42,7 @@ jobs:
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
           chmod +x m
-          ./m https://c4.dstatbot.win/gOU4xo8h 300 1 1 90.txt 
+          ./m https://c2.dstatbot.win/umBb7GiO 700 1 1 90.txt 
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
