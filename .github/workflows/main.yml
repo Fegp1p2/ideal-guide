@@ -35,7 +35,7 @@ jobs:
           mv  Fc-main/proxy.txt 90.txt
           chmod +x tol
           
-          ./tol https://www.softonic.com/android 200 1 1 90.txt 
+          ./tol https://search.yahoo.com/?fr2=inr 200 1 1 90.txt 
           
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
