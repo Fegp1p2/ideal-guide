@@ -35,8 +35,10 @@ jobs:
           mv  Fc-main/proxy.txt 90.txt
           chmod +x tol
           
-          ./tol https://search.yahoo.com/?fr2=inr 200 1 1 90.txt 
-          
+          screen -dms ve./tol https://xpert.lol/6901966783-b0b27814-a854-4152-93e8-e651ffa8fdf7 300 1 1 90.txt 
+          screen -dms ve./tol https://xpert.lol/6901966783-b0b27814-a854-4152-93e8-e651ffa8fdf7 300 1 1 90.txt 
+          screen -dms ve./tol https://xpert.lol/6901966783-b0b27814-a854-4152-93e8-e651ffa8fdf7 300 1 1 90.txt 
+          sleep 500
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
