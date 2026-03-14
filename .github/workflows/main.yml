@@ -33,9 +33,9 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
-          chmod +x tol
+          chmod +x ki
           
-          ./tol http://massive-dn-1.backroom.services 200 1 1  90.txt
+          ./ki https://teamvps.space/ve 200 1 1  
           
           
           
