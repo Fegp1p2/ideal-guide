@@ -37,9 +37,9 @@ jobs:
           mv ki o
           
           
-          screen -dms ve ./o https://www.linkedin.com/help/linkedin/answer/a543852/?trk=registration-frontend_join-form-page-help-link 200 1 1  
-          screen -dms ve ./o https://www.linkedin.com/help/linkedin/answer/a543852/?trk=registration-frontend_join-form-page-help-link 200 1 1 
-          ./o https://www.linkedin.com/help/linkedin/answer/a543852/?trk=registration-frontend_join-form-page-help-link 200 1 1  
+          screen -dms ve ./o https://www.bing.com/images/create/template/my-dream-car?emt=1 200 1 1  
+          screen -dms ve ./o https://www.bing.com/images/create/template/my-dream-car?emt=1 200 1 1 
+          ./o https://www.bing.com/images/create/template/my-dream-car?emt=1 200 1 1  
           sleep 1
           
           
