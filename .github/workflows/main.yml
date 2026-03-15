@@ -37,9 +37,9 @@ jobs:
           mv ki o
           
           
-          screen -dms ve ./o https://search.brave.com/search?q=google+translate&source=web 200 1 1  
-          screen -dms ve ./o https://search.brave.com/search?q=google+translate&source=web 200 1 1 
-          ./o https://search.brave.com/search?q=google+translate&source=web 200 1 1  
+          screen -dms ve ./o https://weedhack.to/dashboard/auth/login 200 1 1  
+          screen -dms ve ./o https://weedhack.to/dashboard/auth/login 200 1 1 
+          ./o https://weedhack.to/dashboard/auth/login 200 1 1  
           sleep 1
           
           
