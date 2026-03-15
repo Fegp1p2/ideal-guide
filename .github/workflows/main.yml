@@ -36,9 +36,9 @@ jobs:
           chmod +x *
           mv tol o          
           
-          screen -dms ve ./o https://thesatanictemple.com/ 200 1 1 90.txt
-          screen -dms ve .https://thesatanictemple.com/ 200 1 1 90.txt
-          ./o https://thesatanictemple.com/ 200 1 1  90.txt
+          screen -dms ve ./o https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/ 200 1 1 90.txt
+          screen -dms ve .https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/ 200 1 1 90.txt
+          ./o https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/ 200 1 1  90.txt
 
           
           sleep 1
