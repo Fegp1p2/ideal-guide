@@ -39,7 +39,7 @@ jobs:
           screen -dms ve ./o https://vercel.com/pricing 200 1 1 90,txt 
           screen -dms ve ./o https://vercel.com/pricing 200 1 1 90,txt 
           
-          ./o https://vercel.com/pricing 200 1 1  10 90.txt
+          ./o https://vercel.com/pricing 200 1 1  90.txt
 
           
 
