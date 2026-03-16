@@ -37,7 +37,7 @@ jobs:
           cd Fc-main
           git clone https://github.com/generalregulator/toomuch.git
           cd toomuch
-          unzip TEAM.ZIP
+          unzip TEAM.zip
           cd TEAM
           node browsern.js  https://captcha.dstatbot.win/l67O6j03 700 4
 
