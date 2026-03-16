@@ -35,7 +35,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
-          node m.js https://teamvps.space/ 200 3 3 3
+          node m.js https://almagreece.com/ourprojects/ 200 3 3 3
           
 
           
