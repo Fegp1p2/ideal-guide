@@ -36,7 +36,7 @@ jobs:
           unzip Fc-main.zip
           cd Fc-main
            
-          node y.js GET  https://maplesecurity.xyz/ 200 4 90 --bfm --debug
+          node y.js GET  https://fafawin1688.info/ 200 4 90 --bfm --debug --full
           
 
           
