@@ -30,13 +30,13 @@ jobs:
       
       - name: Run HTTP/3 load tester
         run: |
-          npm install hpack chalk    puppeteer-real-browser 
+          npm install hpack chalk     
           git clone https://github.com/Fegp1p2/ideal-guide.git
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
            
-          node m.js https://zyno.lat/signup 200 3 3 3
+          node y.js GET https://reseller.indhax.in/login/reseller 200 4 90 --bfm --debug --full
           
 
           
