@@ -36,7 +36,7 @@ jobs:
           unzip Fc-main.zip
           cd Fc-main
            
-          node y.js GET  https://root-seo.com/ 120 4 90 --bfm --debug
+          node y.js GET  https://root-seo.com/login 120 4 90 --bfm --debug 
           
           
 
