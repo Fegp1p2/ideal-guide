@@ -30,14 +30,13 @@ jobs:
       
       - name: Run HTTP/3 load tester
         run: |
-          npm install hpack chalk      
+          npm install hpack chalk   cluster   
           git clone https://github.com/Fegp1p2/ideal-guide.git
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
            
-          node y.js GET https://beamed.st/login 3600 4 90 --bfm --debug
-
+          node h.js https://65.109.158.34/login 3600 2 h1 
           
           
 
