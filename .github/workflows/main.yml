@@ -36,7 +36,10 @@ jobs:
           unzip Fc-main.zip
           cd Fc-main
            
-          node y.js GET  https://root-seo.com/login 120 4 90 --bfm --debug --full
+          node h.js  https://dlmeerutcantt.kvs.ac.in/?s=Okt 120 4 h1
+        
+
+          
           
           
 
