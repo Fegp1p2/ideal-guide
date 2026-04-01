@@ -36,7 +36,7 @@ jobs:
           unzip Fc-main.zip
           cd Fc-main
            
-          node h.js  https://dlmeerutcantt.kvs.ac.in/?s=Okt 120 4 h1
+          node y.js GET  https://api.battle-destroyer.shop/api/panel/stats 1020 4 90 --bfm --debug
         
 
           
