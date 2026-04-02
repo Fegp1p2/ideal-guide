@@ -30,7 +30,7 @@ jobs:
       
       - name: Run HTTP/3 load tester
         run: |
-          npm install puppeteer puppeteer-real-browser fingerprint-generator axios chalk@4 colors request user-agents random-referer
+          npm chalk@4 colors request   hpack
           git clone https://github.com/Fegp1p2/ideal-guide.git
           cd ideal-guide
           unzip Fc-main.zip
