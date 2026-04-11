@@ -35,7 +35,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
-          node m.js https://uam2.dstatbot.win/yDdx0gRr 200 3 3 3
+          node m.js https://uam.dstatbot.win/WYzsHox8 200 3 3 3
 
           
           
