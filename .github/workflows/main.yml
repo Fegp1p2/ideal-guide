@@ -35,7 +35,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
-          node h.js http://13.49.224.82/badmashop 1800 3 h1
+          node h.js http://13.49.224.82:3000/badmashop 1800 3 h1
 
           
           
