@@ -35,7 +35,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
-          node y.js GET https://retrostress.net/api-keys  3600 4 90 --bfm --debug 
+          node y.js GET https://retrostress.net/api-keys  5600 4 90 --bfm --debug 
 
           
           
