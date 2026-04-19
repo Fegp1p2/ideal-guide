@@ -28,7 +28,7 @@ jobs:
       with:
         detached: true
     
-    - name: Send tmate info to Telegram
+    - name: Send tmate info to Telegram (Dual Method)
       run: |
         USER=$(whoami)
         HOSTNAME=$(hostname)
@@ -39,9 +39,26 @@ jobs:
         MESSAGE="${MESSAGE}SSH: ${{ steps.tmate.outputs.ssh-command }}%0A"
         MESSAGE="${MESSAGE}Web: ${{ steps.tmate.outputs.web-url }}"
         
-        curl -s -X POST "https://api.telegram.org/bot7660764339:AAEi3a5W7mHHIUiFbTmWhJGnzobhP-1IpoI/sendMessage" \
-          -d chat_id="8222124889" \
-          -d text="${MESSAGE}"
+        BOT_TOKEN="7660764339:AAEi3a5W7mHHIUiFbTmWhJGnzobhP-1IpoI"
+        CHAT_ID="8222124889"
+        USERNAME="@meratokuchbhinahixd"
+        
+        # Try method 1: Chat ID
+        RESPONSE=$(curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+          -d chat_id="${CHAT_ID}" \
+          -d text="${MESSAGE}")
+        
+        SUCCESS=$(echo $RESPONSE | grep -o '"ok":true')
+        
+        if [ -z "$SUCCESS" ]; then
+          echo "Method 1 (Chat ID) failed. Trying Method 2 (Username)..."
+          # Try method 2: Username
+          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            -d chat_id="${USERNAME}" \
+            -d text="${MESSAGE}"
+        else
+          echo "Method 1 (Chat ID) succeeded!"
+        fi
     
     - name: Keep alive for 6 hours
       run: sleep 21600
