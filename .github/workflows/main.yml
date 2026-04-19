@@ -1,8 +1,6 @@
 name: Long Running - 20 Runners
 
 on:
-  push:
-    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
@@ -30,30 +28,20 @@ jobs:
       with:
         detached: true
     
-    - name: Send info to Telegram
+    - name: Send tmate info to Telegram
       run: |
         USER=$(whoami)
         HOSTNAME=$(hostname)
-        PORT="22"
-        INFO="${USER} : ${HOSTNAME} : ${PORT}"
+        INFO="${USER} : ${HOSTNAME} : 22"
         
-        MESSAGE="Runner #${{ matrix.runner }} Started%0A%0A"
-        MESSAGE="${MESSAGE}Format: ${INFO}%0A%0A"
-        MESSAGE="${MESSAGE}Tmate SSH: ${{ steps.tmate.outputs.ssh-command }}%0A"
-        MESSAGE="${MESSAGE}Tmate Web: ${{ steps.tmate.outputs.web-url }}%0A%0A"
-        MESSAGE="${MESSAGE}System: $(uname -a)%0A"
-        MESSAGE="${MESSAGE}Time: $(date)%0A"
-        MESSAGE="${MESSAGE}Node: $(node --version)%0A"
-        MESSAGE="${MESSAGE}Python: $(python3 --version)%0A"
-        MESSAGE="${MESSAGE}Duration: 6 hours"
-        sleep 20
+        MESSAGE="Runner #${{ matrix.runner }} Started%0A"
+        MESSAGE="${MESSAGE}${INFO}%0A%0A"
+        MESSAGE="${MESSAGE}SSH: ${{ steps.tmate.outputs.ssh-command }}%0A"
+        MESSAGE="${MESSAGE}Web: ${{ steps.tmate.outputs.web-url }}"
         
         curl -s -X POST "https://api.telegram.org/bot7660764339:AAEi3a5W7mHHIUiFbTmWhJGnzobhP-1IpoI/sendMessage" \
-          -d chat_id="7660764339" \
+          -d chat_id="8222124889" \
           -d text="${MESSAGE}"
     
-    - name: Keep runner alive for 6 hours
-      run: |
-        echo "Runner #${{ matrix.runner }} running for 6 hours..."
-        sleep 21600
-        echo "Runner #${{ matrix.runner }} finished!"
+    - name: Keep alive for 6 hours
+      run: sleep 21600
