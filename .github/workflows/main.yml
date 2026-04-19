@@ -36,10 +36,7 @@ jobs:
           cd ideal-guide
           unzip Fc-main.zip
           cd Fc-main
-          node a.js GET  https://my.centrinvest.ru/ 300 4 90 proxy.txt 4 90 --bfm --debug
-
-          
-          
+          node h.js  https://my.centrinvest.ru/hwh 300 4 h1        
           
 
           
