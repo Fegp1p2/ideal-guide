@@ -35,9 +35,9 @@ jobs:
           git clone https://github.com/Fegp1p2/ideal-guide.git
           chmod +x ki
           unzip Fc-main.zip 
-          mv U.txt Fc-main/U.txt 
+          mv i.txt Fc-main/i.txt 
           cd Fc-main
-          node  a.js GET https://gyrange.in/ 800 4 90 U.txt --bfm --debug 
+          node  a.js GET https://gyrange.in/qwertyuiop/login 800 4 90 i.txt --bfm --debug 
 
           
 
