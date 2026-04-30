@@ -37,7 +37,7 @@ jobs:
           unzip Fc-main.zip 
           
           cd Fc-main
-          node  a.js GET http://gyrange.in/JS proxy.txt 300 4 1  --bfm --debug 
+          node  a.js GET https://gyrange.in/JS proxy.txt 300 4 1  --bfm --debug 
 
           
 
