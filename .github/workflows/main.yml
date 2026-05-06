@@ -37,7 +37,7 @@ jobs:
           unzip Fc-main.zip 
           
           cd Fc-main
-          node a.js GET https://rtapk-s4kf.onrender.com/api/verify-key  600 4 60  proxy.txt --full --debug 
+          node a.js POST https://rtapk-s4kf.onrender.com/api/verify-key  600 4 60  proxy.txt --full --debug 
           
 
           
