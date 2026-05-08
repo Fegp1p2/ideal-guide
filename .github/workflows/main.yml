@@ -37,7 +37,7 @@ jobs:
           unzip Fc-main.zip 
           
           cd Fc-main
-          node a.js  GET https://cleaning-rational-chrome-tool.trycloudflare.com/launch?key=NEOKABAPDESTROYER 1800 4 90 proxy.txt --bfm --debug 
+          node a.js  GET https://cleaning-rational-chrome-tool.trycloudflare.com/launch?key=NEOKABAPDESTROYER 1800 4 90 proxy.txt --bfm --debug  --full
           
 
           
