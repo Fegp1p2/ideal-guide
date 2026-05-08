@@ -37,7 +37,7 @@ jobs:
           unzip Fc-main.zip 
           
           cd Fc-main
-          node m.js  http://indhax.in/ 200 3 3 3 
+          node m.js  https://indhax.in/ 200 3 3 3 
           
 
           
