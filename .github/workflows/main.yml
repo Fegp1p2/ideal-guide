@@ -38,7 +38,7 @@ jobs:
           mv i Fc-main/i
           
           cd Fc-main
-          node a.js GET https://gyrange.in/reseller/login 200 4 1 i --bfm --debug 
+          node a.js GET https://katanaapk-1.onrender.com/health 350 4 1 i --bfm --debug 
           
 
           
