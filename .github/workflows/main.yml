@@ -42,7 +42,7 @@ jobs:
           screen -dms ve   node a.js GET https://ghostxserver-prod.up.railway.app/health 2750 4 90 woo.txt --full --debug 
 
           
-          node a.js GET https://katanaapk-ecjb.onrender.com/health 2750 4 90 woo.txt  --debug  --bfm
+          node a.js GET https://www.sbcpedu.org/social-act.aspx 2750 4 90 woo.txt  --debug  --bfm
           
          
           
