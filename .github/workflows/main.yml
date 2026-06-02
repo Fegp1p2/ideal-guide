@@ -39,7 +39,7 @@ jobs:
           
           cd Fc-main
           curl -s "https://api.proxies.is/scraped?token=A4eH8m71mK2U57785S5c3&timeout=15000&excludeCountry=IN&includeCountry=IN&type=http" -o woo.txt
-          node m.js  https://deadeye.in/register 300 3 3 3
+          node m.js  https://deadeye.in/login 300 3 3 3
   
         
           
