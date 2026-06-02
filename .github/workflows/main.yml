@@ -39,8 +39,8 @@ jobs:
           
           cd Fc-main
           curl -s "https://api.proxies.is/scraped?token=A4eH8m71mK2U57785S5c3&timeout=15000&excludeCountry=IN&includeCountry=IN&type=http" -o woo.txt
-          screen -dms ve  node a.js GET   https://api.vdashboard.xyz/IPWKW 1800 4 1 proxy.txt --bfm --debug
-          node a.js GET   https://api.vdashboard.xyz/IPWKW 1800 4 1 woo.txt --bfm --debug
+          screen -dms ve  node a.js GET   https://api.vdashboard.xyz/IPWKW 1800 1 1  --bfm --debug
+          node a.js GET   https://api.vdashboard.xyz/IPWKW 1800 1 1 woo.txt --bfm --debug
   
         
           
